@@ -6,19 +6,34 @@ class analysisProject:
         with open(self.fname) as f:
             self.lines = f.readlines()
 
-'''function counts the number of lines'''
+    '''function counts the number of lines'''
     def filelen(self):
-       n = len(self.lines)
-       return n
+        n = 0
+        for line in self.lines:
+            line = line.strip()
+            print(len(line))
+            if len(line) != 0:
+                n = n + 1
+        return n
 
-'''function counts words per line'''
+    '''function counts the amount of stanzas'''
+    def stanzact(self):
+        n = 0
+        for line in self.lines:
+            line = line.strip()
+            if line == '':
+                n = n + 1
+            c = n + 1
+        return c
+
+    '''function counts words per line'''
     def wordct(self):
         for i in range(len(lines)):
             lt = lines[i].strip().split(" ")
             return len(lt)
 
-'''function finds total word count'''
-    total = 0 '''needs initial total'''
+    '''function finds total word count'''
+    total = 0  #needs initial total
     def total(self):
         for i in range(len(lines)):
             lt = lines[i].strip().split(" ")
@@ -26,9 +41,18 @@ class analysisProject:
             total = total + n
             return total
 
-'''function finds the average words per line'''
+    '''function finds the average words per line'''
     def average(self):
         for i in range(len(lines)):
             lt = lines[i].strip().split(" ")
             average = total/len(self.lines)
             return average 
+
+    '''function seperates and highlights where each sentence starts'''
+    def sentencebreak(self):
+        with open(self.fname) as f:
+            fullText = f.read()
+        fullText = fullText.replace('\n', ' ')
+        self.sentences = fullText.split(".")
+        for s in self.sentences:
+            print("*:", s)
