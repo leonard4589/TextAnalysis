@@ -32,6 +32,17 @@ class analysisProject:
             lt = lines[i].strip().split(" ")
             return len(lt)
 
+    '''function counts the amount of letters in each word'''
+    def letterct(self):
+        w = 0
+        for line in self.lines:
+            for word in line:
+                word = word.strip()
+                print (word, len(word))
+                if len(word) != 0:
+                    w = w + 1
+        return w
+           
     '''function finds total word count'''
     total = 0  #needs initial total
     def total(self):

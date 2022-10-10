@@ -1,11 +1,11 @@
-from democlass import*
+from Class import*
 
-tFile = analysisProject("terence.txt")
+tFile = analysisProject("Trumpin.txt")
 
 
-# print(tFile.sentencebreak())
-w = "france"
-print(tFile.countWord(w))
+print(tFile.letterct())
+# w = "france"
+# print(tFile.countWord(w))
 
 # print("Number of lines: ", tFile.filelen())
 # print("Number of stanzas: ", tFile.stanzact())
