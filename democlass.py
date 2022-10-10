@@ -56,3 +56,11 @@ class analysisProject:
         self.sentences = fullText.split(".")
         for s in self.sentences:
             print("*:", s)
+
+    '''function will count how many times a specific word is said within a document'''
+    def countWord(self, word):
+        n = 0
+        for s in self.sentences:
+            if word in s:
+                n += 1
+            return n
