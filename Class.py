@@ -30,7 +30,7 @@ class analysisProject:
     def wordct(self):
         for i in range(len(self.lines)):
             lt = self.lines[i].strip().split(" ")
-            return len(lt)
+        return len(lt) 
 
     '''function counts the total number of characters'''
     def letterct(self):

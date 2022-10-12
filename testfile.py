@@ -1,14 +1,15 @@
 from Class import*
 
 tFile = analysisProject("Trumpin.txt")
-bFile = analysisProject("Bidinin.txt")
+bFile = analysisProject("Bidenin.txt")
 oFile = analysisProject("Obamain.txt")
 rFile = analysisProject("Reaganin.txt")
 
 '''Trump's inauguration speech'''
 # print("Total number of lines in Trump's speech: ", tFile.filelen())
 # print("Total number of stanzas in Trump's speech: ", tFile.stanzact())
-# print("Number of words per line in Trump's speech: ", tFile.wordct())
+print("Number of words per line in Trump's speech: ", tFile.wordct())
+
 # print("Total number of characters in Trump's speech: ", tFile.letterct())
 # print("Average amount of characters per word in Trump's speech: ", tFile.averagew())
 # print("Total number of words in Trump's speech: ", tFile.total())
