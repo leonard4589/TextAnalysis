@@ -15,15 +15,15 @@ rFile = analysisProject("Reaganin.txt")
 # print("Average amount of words per line in Trump's speech: ", tFile.average())
 # print("The following sentences are seperated and hightlighted where they start in Trump's speech: ", tFile.sentencebreak())
 
-'''Bidin's inauguration speech'''
-# print("Total number of lines in Bidin's speech: ", bFile.filelen())
-# print("Total number of stanzas in Bidin's speech: ", bFile.stanzact())
-# print("Number of words per line in Bidin's speech: ", bFile.wordct())
-# print("Total number of characters in Bidin's speech: ", bFile.letterct())
-# print("Average amount of characters per word in Bidin's speech: ", bFile.averagew())
-# print("Total number of words in Bidin's speech: ", bFile.total())
-# print("Average amount of words per line in Bidin's speech: ", bFile.average())
-# print("The following sentences are seperated and hightlighted where they start in Bidin's speech: ", bFile.sentencebreak())
+'''Biden's inauguration speech'''
+# print("Total number of lines in Biden's speech: ", bFile.filelen())
+# print("Total number of stanzas in Biden's speech: ", bFile.stanzact())
+# print("Number of words per line in Biden's speech: ", bFile.wordct())
+# print("Total number of characters in Biden's speech: ", bFile.letterct())
+# print("Average amount of characters per word in Biden's speech: ", bFile.averagew())
+# print("Total number of words in Biden's speech: ", bFile.total())
+# print("Average amount of words per line in Biden's speech: ", bFile.average())
+# print("The following sentences are seperated and hightlighted where they start in Biden's speech: ", bFile.sentencebreak())
 
 '''Obama's inauguration speech'''
 # print("Total number of lines in Obama's speech: ", oFile.filelen())
@@ -47,6 +47,6 @@ rFile = analysisProject("Reaganin.txt")
 
 '''Comparison between each speech'''
 print("Average amount of characters per word in Trump's speech: ", tFile.averagew())
-print("Average amount of characters per word in Bidin's speech: ", bFile.averagew())
+print("Average amount of characters per word in Biden's speech: ", bFile.averagew())
 print("Average amount of characters per word in Obama's speech: ", oFile.averagew())
 print("Average amount of characters per word in Reagan's speech: ", rFile.averagew())
