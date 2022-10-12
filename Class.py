@@ -29,7 +29,7 @@ class analysisProject:
     '''function counts words per line'''
     def wordct(self):
         for i in range(len(self.lines)):
-            lt = lines[i].strip().split(" ")
+            lt = self.lines[i].strip().split(" ")
             return len(lt)
 
     '''function counts the total number of characters'''
