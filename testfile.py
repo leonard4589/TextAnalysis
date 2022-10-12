@@ -3,7 +3,7 @@ from Class import*
 tFile = analysisProject("Trumpin.txt")
 
 
-print(tFile.letterct())
+print(tFile.averagew())
 # w = "france"
 # print(tFile.countWord(w))
 

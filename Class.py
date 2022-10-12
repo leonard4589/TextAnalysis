@@ -28,35 +28,43 @@ class analysisProject:
 
     '''function counts words per line'''
     def wordct(self):
-        for i in range(len(lines)):
+        for i in range(len(self.lines)):
             lt = lines[i].strip().split(" ")
             return len(lt)
 
-    '''function counts the amount of letters in each word'''
+    '''function counts the amount of characters in each line'''
     def letterct(self):
-        w = 0
+        total = 0
         for line in self.lines:
-            for word in line:
-                word = word.strip()
-                print (word, len(word))
-                if len(word) != 0:
-                    w = w + 1
-        return w
+            line = line.replace(",", "")
+            line = line.replace(" ", "")
+            line = line.replace(".", "")
+            line = line.replace(";", "")
+            line = line.replace(":", "")
+            w = len(line)
+            total = total + w
+            return total
+            # idk why this is only doing one line and not all of them
            
+    def averagew(self):
+        a = self.letterct / len(self.lines) #unsupported operand type
+        return a
+
     '''function finds total word count'''
-    total = 0  #needs initial total
+    # total = 0  #needs initial total
     def total(self):
-        for i in range(len(lines)):
-            lt = lines[i].strip().split(" ")
+        total = 0
+        for i in range(len(self.lines)):
+            lt = self.lines[i].strip().split(" ")
             n = len(lt)
             total = total + n
             return total
 
     '''function finds the average words per line'''
     def average(self):
-        for i in range(len(lines)):
-            lt = lines[i].strip().split(" ")
-            average = total/len(self.lines)
+        for i in range(len(self.lines)):
+            lt = self.lines[i].strip().split(" ") #why do I need this again?
+            average = self.total/len(self.lines) #says that this is an unsupported operant type
             return average 
 
     '''function seperates and highlights where each sentence starts'''
