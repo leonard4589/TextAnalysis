@@ -1,6 +1,7 @@
 class analysisProject:
     '''Class for a text analysis project. Includes exsisting methods and new functions required to answer question.'''
 
+    '''function initializes the class'''
     def __init__(self, filename):
         self.fname = filename
         with open(self.fname) as f:
